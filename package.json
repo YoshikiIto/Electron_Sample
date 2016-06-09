@@ -1,0 +1,20 @@
+{
+  "name": "Electron_Sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoshikiIto/Electron_Sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YoshikiIto/Electron_Sample/issues"
+  },
+  "homepage": "https://github.com/YoshikiIto/Electron_Sample#readme"
+}
