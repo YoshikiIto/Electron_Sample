@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="lib/script.js"></script>
+  <script src="lib/codemirror.js"></script>
   <link rel="stylesheet" href="lib/codemirror.css">
+  <link rel="stylesheet" href="theme/monokai.css">
+  <script src="mode/markdown/markdown.js"></script>
   <meta charset="UTF-8">
   <title>Sample</title>
 </head>
 <body>
   <p>テキストエディタのサンプル</p>
-  <script src="lib/script.js"></script>
-  <script src="lib/codemirror.js"></script>
-  <textarea id="editor_js" rows="30" cols="50"></textarea>
+  <textarea id="editor_textarea" rows="50" cols="100">## ほげ</textarea>
+  <script>CodeMirror.fromTextArea(document.getElementById('editor_textarea'), {
+      mode: "markdown",
+      autofocus: true,
+      lineNumbers: true,
+      indentUnit: 4,
+  		theme: "monokai",
+      extraKeys: {
+          "Enter": "newlineAndIndentContinueMarkdownList"
+      },
+  })</script>
+  <!--<textarea id="editor2_js" rows="50" cols="100"></textarea>-->
+  <p>
+    <input type="button" value="右へ" onclick="ToRight()">
+    <input type="button" value="左へ" onclick="ToLeft()">
+  </p>
 </body>
 
 </html>
