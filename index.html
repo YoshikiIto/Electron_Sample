@@ -11,7 +11,7 @@
 </head>
 <body>
   <p>テキストエディタのサンプル</p>
-  <textarea id="editor_textarea" rows="50" cols="100">## ほげ</textarea>
+  <textarea id="editor_textarea" rows="50" cols="100">## サンプル</textarea>
   <script>CodeMirror.fromTextArea(document.getElementById('editor_textarea'), {
       mode: "markdown",
       autofocus: true,
@@ -22,6 +22,9 @@
           "Enter": "newlineAndIndentContinueMarkdownList"
       },
   })</script>
+  <p id="preview_area">
+    ほげ
+  </p>
   <!--<textarea id="editor2_js" rows="50" cols="100"></textarea>-->
   <p>
     <input type="button" value="右へ" onclick="ToRight()">

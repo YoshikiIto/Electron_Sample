@@ -28,6 +28,9 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({width: 1500, height: 1000});
   mainWindow.loadURL('file://' + __dirname + '/index.html');
 
+  // Chromeの開発者ツールを表示する設定
+  mainWindow.webContents.openDevTools();
+
   // ウィンドウが閉じられたらアプリも終了
   mainWindow.on('closed', function() {
     mainWindow = null;
